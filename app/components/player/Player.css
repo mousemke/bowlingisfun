@@ -91,13 +91,15 @@
 }
 
 
-.player__score-submit:hover
+.player__score-submit:hover,
+.player__score-random:hover
 {
     background-color:       #cccccc;
 }
 
 
-.player__score-submit:active
+.player__score-submit:active,
+.player__score-random:active
 {
     background-color:       #ffffff;
 }

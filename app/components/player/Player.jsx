@@ -24,7 +24,7 @@ export default class Player extends Component
 
         this.prepAddScore   = this.prepAddScore.bind( this );
         this.checkEnter     = this.checkEnter.bind( this );
-        this.randomScore    = this.randomScore.bind( this )
+        this.randomScore    = this.randomScore.bind( this );
 
         this.state = {};
     }
