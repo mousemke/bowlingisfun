@@ -24,6 +24,7 @@ export default class Player extends Component
 
         this.prepAddScore   = this.prepAddScore.bind( this );
         this.checkEnter     = this.checkEnter.bind( this );
+        this.randomScore    = this.randomScore.bind( this )
 
         this.state = {};
     }
@@ -59,7 +60,7 @@ export default class Player extends Component
      *
      * @return {Void} void
      */
-    prepAddScore( e )
+    prepAddScore()
     {
         const scoreInput    = this.refs.scoreInput;
         const value         = parseInt( scoreInput.value );
@@ -81,10 +82,26 @@ export default class Player extends Component
             this.props.addScore( {
                 value   : value,
                 player  : this.props.index,
-                e       : e,
                 self    : this
             } );
         }
+    }
+
+
+    /**
+     * ## randomScore
+     *
+     * adds a random score
+     *
+     * @return {Void} void
+     */
+    randomScore()
+    {
+        const ball = Math.ceil( Math.random() * 10 );
+
+        this.refs.scoreInput.value = ball;
+
+        this.prepAddScore();
     }
 
 

@@ -54,8 +54,8 @@ export default class App extends Component
         const score         = player.score;
 
         let frame           = score.length;
-        const strike         = player.strike;
-        const spare          = player.spare;
+        const strike        = player.strike;
+        const spare         = player.spare;
         let round           = score[ score.length - 1 ];
 
         const value         = change.value;
