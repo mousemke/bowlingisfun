@@ -1,0 +1,7 @@
+instrumentation:
+  default-excludes: false
+  excludes: [
+    'app/flounder/**',
+    'test/**',
+    'devServer/**',
+    '**/node_modules/**']

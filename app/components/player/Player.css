@@ -1,0 +1,103 @@
+
+.player__frame,
+.player__submit-score
+{
+    width:                  75px;
+    height:                 75px;
+    display:                inline-block;
+}
+
+
+.player__frame
+{
+    border:                 1px #000000 solid;
+    border-right:           none;
+}
+
+
+.player__frame-10
+{
+    border:                 1px solid #000000;
+    width:                  110px;
+}
+
+
+.player__frame-score
+{
+    font-size:              3em;
+    display:                block;
+    width:                  95%;
+    text-align:             right;
+}
+
+
+.player__frame-ball
+{
+    width:                  2rem;
+    display:                inline-block;
+    font-size:              2rem;
+    border:                 1px solid #000000;
+    text-align:             center;
+}
+
+
+.player__frame-index
+{
+    margin-left:           10px;
+}
+
+
+.player__score-input
+{
+    width:                  73px;
+    height:                 73px;
+    top:                    -6px;
+    position:               relative;
+    border:                 1px solid #000000;
+    font-size:              3em;
+    text-indent:            10px;
+    outline:                none;
+}
+
+
+.player__score-input:focus
+{
+    border-color:           #3344dd;
+}
+
+.player__score-random,
+.player__score-submit
+{
+    top:                    -26px;
+    position:               relative;
+    border:                 1px solid #000000;
+    cursor:                 pointer;
+    width:                  77px;
+    height:                 77px;
+    border-left:            none;
+}
+
+
+.player__score-submit
+{
+    top:                    -33px;
+}
+
+
+.player__score-error,
+.player__score-error:focus
+{
+    border-color:           #ff0000;
+}
+
+
+.player__score-submit:hover
+{
+    background-color:       #cccccc;
+}
+
+
+.player__score-submit:active
+{
+    background-color:       #ffffff;
+}
